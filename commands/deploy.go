@@ -5,7 +5,7 @@ import (
   "net/http"
 )
 
-var DeployCommand = cli.Command{
+var Deploy = cli.Command{
   Name:      "deploy",
   ShortName: "d",
   Usage:     "[project name] deploy the project",
