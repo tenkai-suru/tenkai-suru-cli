@@ -1,7 +1,11 @@
 # Tenkai-Suru
+### Running the app
+After you have the `ts` file, type `./ts --help` to see the all commands you can run.
+
 ### To Deploy
-
-
+./ts deploy [projectname]
+or 
+./ts d [projectname]
 
 ### Setup for Mac
 1. Install Go `brew install go`
