@@ -1,11 +1,14 @@
 # Tenkai-Suru
+
+[![Build Status](https://travis-ci.org/tenkai-suru/tenkai-suru-cli.svg?branch=master)](https://travis-ci.org/tenkai-suru/tenkai-suru-cli)
+
 ### Running the app
 After you have the `ts` file, type `./ts --help` to see the all commands you can run.
 
 ### To Deploy
 `./ts deploy [projectname]`
 
-or 
+or
 
 `./ts d [projectname]`
 
