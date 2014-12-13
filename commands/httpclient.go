@@ -1,18 +1,25 @@
 package commands
 
 import (
-  "net/http"
   "fmt"
+  "io/ioutil"
+  "net/http"
 )
 
 func httpGet(path string) {
   resp, _ := http.Get("https://tenkai-suru-api.herokuapp.com/" + path)
-  fmt.Println("Response body ", resp.Body)
+
+  contents, _ := ioutil.ReadAll(resp.Body)
+
+  fmt.Printf("%s\n", string(contents))
   fmt.Println(resp.Status)
 }
 
 func httpPost(path string) {
   resp, _ := http.Post("https://tenkai-suru-api.herokuapp.com/" + path, "application/text", nil)
-  fmt.Println("Response body ", resp.Body)
+
+  contents, _ := ioutil.ReadAll(resp.Body)
+
+  fmt.Printf("%s\n", string(contents))
   fmt.Println(resp.Status)
 }
